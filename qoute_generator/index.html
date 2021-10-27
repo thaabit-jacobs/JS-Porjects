@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: left;
+            background-color:rgba(116, 59, 6, 0.144);
+            text-align: center;
+            
+        }
+
+        button{
+            color: white;
+            background: rgb(88, 146, 134);
+            padding: 1rem;
+            font-size: 1rem;
+        }
+
+        .mark{
+            font-size: 7rem;
+            font-weight: bolder;
+            color: rgba(0, 0, 0, 0.562);
+        
+        }
+
+        .qoute-box{
+            width:  50%;
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.562);
+            background-color:rgba(116, 59, 6, 0.144);
+            margin: 5rem 20rem;
+            padding: 2.5rem;
+        }
+
+        .author{
+            color: rgb(88, 146, 134);
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1.5rem;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="qoute-box">
+
+        <button id="qoute_generator" onclick="generateQoute()">Generate Qoute</button>
+        
+        <p id="qouteText" class="qoute">
+            
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut asperiores unde eveniet omnis iure ducimus fugit
+             reprehenderit beatae inventore doloremque earum blanditiis aliquid, fugiat dicta odit error vero? Deserunt, eos?
+        </p>
+
+        <p id="qouteAuthor" class="author">- Author</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
