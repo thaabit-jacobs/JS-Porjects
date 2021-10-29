@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+            background-image: url("img/background.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        h1{
+            font-weight: bold;
+            color: red;
+            font-size: 1.5rem;
+            margin-top: 7.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h2{
+            font-weight: bold;
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        img{
+            width: 160px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .test-box{
+            margin: 2rem 10rem;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 0.5rem 2rem;
+            color: white;
+        }
+
+        .client-name{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .client-test{
+            font-size: 1.2rem;
+            font: bold;
+        }
+        button{
+            color: red;
+            font-size: xx-large;
+            padding: 0.25rem;
+            margin-left: 5rem;
+            margin-right: 5rem;
+            border: 2px solid red;
+            border-radius: 25px;
+            background: rgba(252, 252, 252, 0.1);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>CLIENT</h1>
+
+    <h2>TESTIMONIALS</h2>
+
+    <div class="test-box">
+        <img id="imagine" src="img/f1.jfif" alt="">
+
+        <h3 id="client-name" class="client-name">John</h3>
+
+        <p id="client-test" class="client-test">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Laborum tempora molestiae ullam quas aspernatur maxime.
+        </p>
+    </div>
+
+    <button onclick="previous()"><</button>
+    <button onclick="next()">></button>
+
+    <p id="index">0</p>
+    <script src="app.js"></script>
+
+    
+</body>
+</html>
