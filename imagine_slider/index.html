@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(210, 230, 241);
+        }
+
+        .imagine-box{
+            width: 70%;
+            margin: 5rem 10rem 2rem;
+            border-color: blue; 
+            border-style: solid;
+            border-width: 5px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        button{
+            margin: 0.5rem 2.5rem;
+            color: white;
+            background: rgb(88, 146, 134);
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+        }
+
+        .prev{
+            margin-left: 35rem ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="imagine-box">
+        <img id="imagine" src="imgs/one_piece_1.jpg" alt="one piece family">
+    </div>
+    <button onclick="previous()" class="prev">Previous</button>
+    <button onclick="next()">Next</button>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
