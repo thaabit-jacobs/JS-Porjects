@@ -1,8 +1,23 @@
-//Things I learned: How to dynamically include options into an HTML form
-//Things I changed: I created two functions to handle input. One for errors. One for calculating the tip.
-//I broke out the feedback into three different feeds. Before, all three would show for just one error.
-//Added a validator to only calculate if feedback wasn't received.
-//Added a toFixed method to the output
-// Made input disappear after submitting
-//Bug. I had setInterval in my code instead of setTimeout. 
 
+
+//Set up a service array
+const services = [{
+  value: 1,
+  title: "great - 20%"
+}, {
+  value: 2,
+  title: "good - 10%"
+}, {
+  value: 3,
+  title: "bad - 2%"
+}]
+
+services.forEach(function (service) {
+  //create the option element
+  const option = document.createElement('option');
+  option.textContent = service.title;
+  option.value = service.value;
+  //select the select element from the DOM
+  const select = document.querySelector('#input-service');
+  select.appendChild(option);
+})
