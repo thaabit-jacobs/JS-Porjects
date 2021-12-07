@@ -1,0 +1,24 @@
+#main {
+    height: 100vh;
+    margin: 1.5em;
+}
+
+
+
+#img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#image {
+    width: auto;
+    
+    max-width: 100%;
+    
+    margin-left: auto;
+    
+    margin-right: auto;
+}
