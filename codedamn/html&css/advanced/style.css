@@ -1,0 +1,38 @@
+html{
+    --flex-center: center;
+}
+
+body{
+    height: 95vh;
+    display: flex;
+    justify-content: var(--flex-center);
+    align-items: var(--flex-center);
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: var(--flex-center);
+    align-items: var(--flex-center);
+    height: auto;
+    width: 500px;
+    box-sizing: border-box;
+    background: blue;
+    color: white;
+}
+
+div:first-child{
+    color: black;
+}
+
+h1+h1{
+    color: purple;
+}
+
+h1+h1+h1{
+    color: orange;
+}
+
+h1+h1+h1+h1{
+    color: green;
+}
